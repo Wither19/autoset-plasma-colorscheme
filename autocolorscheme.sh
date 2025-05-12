@@ -1,3 +1,3 @@
 #!/bin/bash
-colorscheme=$(python3 ~/autocolorscheme/gethour.py)
+colorscheme=$(python3 ./gethour.py)
 plasma-apply-colorscheme $colorscheme
