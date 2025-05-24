@@ -1,3 +1,3 @@
 #!/bin/bash
-colorscheme=$(node ./gethour.js)
-plasma-apply-colorscheme $colorscheme
+colorscheme=$(python3 gethour.py)
+plasma-apply-colorscheme "$colorscheme"
