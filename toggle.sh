@@ -2,10 +2,13 @@ plasma_color_list=$(plasma-apply-colorscheme -l)
 
 current_color=$(plasma-apply-colorscheme -l | grep "(" | cut -d "(" -f1 | cut -c 4- | xargs)
 
-new_color="AritimLight"
+light_color="AritimLight"
+dark_color="MateriaDark"
 
-if [ "$current_color" == "AritimLight" ]; then
-  new_color="MateriaDark"
+new_color="$light_color"
+
+if [ "$current_color" == "$light_color" ]; then
+  new_color="$dark_color"
 
 fi
 
