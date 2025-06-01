@@ -1,1 +1,0 @@
-plasma-apply-colorscheme MateriaDark
